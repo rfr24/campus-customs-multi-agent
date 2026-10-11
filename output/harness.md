@@ -1182,3 +1182,33 @@ recomputed, and each quoted sentence confirmed verbatim in `run_101.json`, `run_
 balance remains $3,400 with zero payments, consistent with the verified state.
 
 No proposal, prediction, run archive, or audit record was changed by Problem 10.
+
+---
+
+# Part J — Publication (Problem 11)
+
+Published to **https://github.com/rfr24/campus-customs-multi-agent**, public, branch `main`,
+commit `0a67bf0`. URL recorded in `output/github_url.txt`.
+
+**Completeness.** All required deliverables were present except a README, which was written for this
+step. The published tree holds 74 files: both SQLite databases, all four output documents, the
+proposal ledger, the audit trail, four archived agent runs, five agent prompts, seven Python test
+suites, and five frontend test files.
+
+**Security.** Scanned twice against the three live secrets on this machine (operator token, approval
+signing key, Portkey API key) — once before pushing and once after cloning the *published* repo back
+down. Both scans clean. `.secrets/`, `.env`, `.claude/` (which held absolute home paths), build
+artifacts, and the redundant data archive are git-ignored and absent from the published tree.
+
+**README.** Documents installation, environment configuration, how to run the backend, dashboard and
+MCP server, how the agents and delegation work, and the three-step approval workflow. It states that
+tickets 101–103 remain open and unresolved and that PAY-0002 is approved but not executed. It also
+explains that `.secrets/approval_key` and `.secrets/operator_token` are generated automatically on
+first use, and that the committed `PAY-0002` signature **will not verify on a fresh clone** because
+a different key is generated there — verified empirically rather than asserted.
+
+**State at publication.** Tickets 101, 102, 103 all open; PAY-0002 approved and not executed;
+PAY-0001 and PUR-0001 pending; checking $3,400.00; zero payments. Original database unchanged at
+`23686a90…`, confirmed identical in the published copy.
+
+Nothing was executed, no proposal decision changed, no agent re-run, and no audit entry altered.

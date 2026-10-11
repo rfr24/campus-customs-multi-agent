@@ -1206,4 +1206,95 @@ against the `pricing` table. **Problem 10 complete.**_
 
 ---
 
-## Problem 11: _(not yet started)_
+## Problem 11: Publish to GitHub
+
+### Initial prompt
+
+> Problem 11: Prepare, publish, and verify my completed Campus Customs multi-agent project on GitHub.
+>
+> This is the final submission step for Yale AI Foundations Homework 5.
+> Follow the Problem 11 requirements previously documented in the project. There is no separate assignment handout; the instructions were provided as screenshots.
+> Work efficiently. Reuse existing test results and evidence rather than unnecessarily rerunning live agents or making API calls.
+>
+> 1. Audit submission completeness
+> [five-agent team and prompts, FastMCP server and database tools, FastAPI backend, React frontend, both SQLite files, AI_prompts.md, output/harness.md, output/predictions.md, output/results.md, output/reflection.md, archived agent runs and tests, setup instructions and dependency files]
+>
+> 2. Security and privacy audit
+> [API keys, bearer tokens, passwords, credentials, .env, .secrets/, signing keys, operator tokens, hard-coded secrets, personal information; ensure .gitignore excludes them and they are not staged or tracked; do not delete local secrets needed to run]
+>
+> 3. Final project verification
+> [original database unchanged; working database and proposal ledger preserve the final Problem 9 state; PAY-0002 approved but not executed; PAY-0001 and PUR-0001 pending; checking $3,400 and no payments executed; all three tickets open; predictions, run archives and audit history intact; README explains installation, environment configuration, running backend/frontend, how the agents work, and the human approval workflow; README must not claim the tickets were fully resolved]
+>
+> 4. GitHub publication
+> [prepare a clean public repository; use an existing one if configured, otherwise create `campus-customs-multi-agent`; before making public or pushing, show the intended URL and visibility, the file list, security scan results, and any outstanding concerns; stop and request confirmation before publishing]
+>
+> 5. Post-publication verification
+> [verify public accessibility; confirm both database files and all major deliverables present; confirm no secrets committed; record the verified URL in output/github_url.txt; record this Problem 11 prompt and any actual follow-ups]
+
+_(The prompt as sent ended mid-sentence at "Record this Problem 11 prompt and any actual". Read as
+"...follow-ups in AI_prompts.md", matching the pattern used throughout. Requirement text above is
+abbreviated in brackets where the original enumerated sub-points at length.)_
+
+### Follow-up 1 — verify the README covers local credential initialization
+
+> Before publication, verify that README.md accurately explains how local operator credentials and
+> approval signing keys are initialized, and that historical approval signatures may not verify with
+> newly generated local keys.
+>
+> Do not commit any real credentials or signing keys.
+>
+> If the README already covers this, make no changes.
+>
+> Then stop and show me the result. Do not publish yet.
+
+**What was missing:** the README said only that the two secrets are "generated automatically on
+first use" and omitted the consequence — that `output/proposals.json` is committed with PAY-0002's
+HMAC signature, which was produced with a local key that is deliberately not published, so a fresh
+clone generating its own key cannot verify it. Confirmed empirically on a simulated clone
+(`approval.verify()` returned `False`), then documented: PAY-0002 reads as `approved` but cannot be
+executed elsewhere, which is the system correctly failing closed.
+
+### Follow-up 2 — publication authorization
+
+> I explicitly approve publishing my completed Campus Customs Homework 5 project to the following
+> GitHub repository:
+> Repository: rfr24/campus-customs-multi-agent
+> Visibility: PUBLIC
+> Proceed with the previously reviewed publication plan.
+>
+> 1. Perform one final check that no API keys, operator tokens, approval signing keys, `.env` files,
+>    or `.secrets/` contents are staged.
+> 2. Create the public repository, commit the approved project files, and push them to GitHub.
+> 3. Verify that the repository is publicly accessible and that both required SQLite databases, the
+>    README, AI_prompts.md, and all assignment deliverables are present.
+> 4. Verify that no secrets were published.
+> 5. Write the verified GitHub URL to `output/github_url.txt`.
+> 6. Record this final publication authorization and the actual GitHub actions in AI_prompts.md.
+> 7. Commit and push any final documentation updates so the GitHub repository contains the completed
+>    submission records.
+> 8. Report the verified public URL, final commit hash, and any remaining submission steps.
+>
+> Do not execute payments or purchases, change proposal decisions, rerun agents, or alter the
+> historical audit evidence.
+> Do not claim the assignment has been submitted to Canvas unless that submission actually occurs.
+
+**Actual GitHub actions taken:**
+
+1. `git init`, `git add -A` — 74 files staged after excluding `.secrets/`, `.env`, `.claude/`
+   (absolute home paths), build artifacts, and the redundant data archive.
+2. Pre-push scan against the three live secrets on this machine — clean.
+3. `git commit` — `0a67bf0`.
+4. `gh repo create campus-customs-multi-agent --public --source=. --remote=origin`.
+5. `git push -u origin main`.
+6. Verified public: `gh repo view` reports `PUBLIC`/`isPrivate: false`, and an unauthenticated
+   `curl` of the repo page returned HTTP 200.
+7. Queried the published git tree via the GitHub API — all 21 checked deliverables present, both
+   `.db` files at 53,248 bytes, five agent prompts, seven Python suites, five frontend tests.
+8. Cloned the published repo back down and re-scanned its contents against the live secrets —
+   clean; both databases hash to `23686a90…`, matching local.
+9. Wrote `output/github_url.txt`; committed and pushed final documentation.
+
+No payment or purchase was executed, no proposal decision changed, no agent re-run, and no audit
+entry altered.
+
+---

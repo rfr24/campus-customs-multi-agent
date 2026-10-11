@@ -1,0 +1,24 @@
+https://github.com/rfr24/campus-customs-multi-agent
+
+Repository : rfr24/campus-customs-multi-agent
+Visibility : PUBLIC (verified — unauthenticated GET returned HTTP 200)
+Branch     : main
+Commit     : 0a67bf0750d5cc0feb74d97032a5ef1dac1e86f9
+Published  : 2026-10-11T22:13:50Z
+Files      : 74
+
+Verified on the published tree:
+  - data/campus_customs.db and data/campus_customs_new.db both present,
+    SHA-256 23686a90... matching local
+  - README.md, AI_prompts.md, output/harness.md, output/predictions.md,
+    output/results.md, output/reflection.md all present
+  - All four agent run archives and the audit trail present
+  - All five agent prompts, 7 Python test suites, 5 frontend test files
+  - No .secrets/, .env, or operator/approval key material published
+    (re-scanned after cloning the public repo)
+
+Project state at publication: tickets 101, 102, 103 all open and unresolved.
+PAY-0002 approved but NOT executed; PAY-0001 and PUR-0001 pending human
+approval. Checking balance $3,400.00, zero payments executed.
+
+Note: this repository is published. It has NOT been submitted to Canvas.
