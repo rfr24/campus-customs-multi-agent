@@ -1,0 +1,106 @@
+{
+  "run_id": "run-e96c3efe8944",
+  "ticket_id": 101,
+  "started_at": "2026-10-11T20:01:44+00:00",
+  "finished_at": "2026-10-11T20:02:08+00:00",
+  "stage": "awaiting_human_approval",
+  "ticket_status": "open",
+  "outcome": {
+    "request": "Handle ticket 101.\nType: customer_order\nRequester: Tauhid Zaman\nSubject: Bulldog tee\nNotes: Needs a tee in size S.\nSKU: CC-TEE-WHITE  Size: S  Qty: 1\nLinked lease: (none)  Linked invoice: 501\n\nInvestigate using your tools and the relevant specialists, then report what the shop should do. Prepare proposals where a financial action is warranted, but do not claim anything has been paid, ordered, or resolved.",
+    "handled_by": "boss",
+    "specialists_consulted": [
+      "inventory",
+      "accounting",
+      "customer_service"
+    ],
+    "findings": [
+      {
+        "agent": "customer_service",
+        "summary": "Ticket 101 requests one CC-TEE-WHITE tee in size S. The linked invoice is an open $840 vendor invoice for a \u201cRush reprint CC-TEE-WHITE S,\u201d due 2026-08-28; as of 2026-08-31 it is past due, but that does not establish that the reprint was approved, completed, or available.",
+        "facts": [
+          "Ticket 101: Tauhid Zaman requests qty 1, SKU CC-TEE-WHITE, size S; note says \u201cNeeds a tee in size S.\u201d",
+          "Linked invoice 501 is open for $840, description \u201cRush reprint CC-TEE-WHITE S,\u201d due 2026-08-28.",
+          "Authoritative shop date is 2026-08-31."
+        ],
+        "constraints": [
+          "No verified inventory or reprint completion/arrival status is available here; do not promise availability or an ETA.",
+          "The $840 amount is a vendor invoice, not an established customer price."
+        ],
+        "proposed_actions": [],
+        "needs_human_approval": false,
+        "unresolved": [
+          "Confirm current stock for CC-TEE-WHITE size S and the status/approval/ETA of the rush reprint.",
+          "Confirm customer-facing price and any applicable pricing policy before quoting terms.",
+          "Suggested customer reply: \u201cHi Tauhid, thanks for your request for one white Bulldog tee in size S. We\u2019re checking availability and will follow up with confirmation before promising a pickup or delivery date.\u201d"
+        ]
+      },
+      {
+        "agent": "inventory",
+        "summary": "Ticket 101 requests one CC-TEE-WHITE tee in size S, and none are on hand, leaving 1 unit short. Bulldog Print Co is the relevant apparel reprint vendor; its 5-day lead time from 2026-08-31 gives an earliest realistic arrival of 2026-09-05, and the recorded unit cost is $8.00.",
+        "facts": [
+          "Ticket 101 specifies CC-TEE-WHITE, size S, quantity 1.",
+          "Inventory for CC-TEE-WHITE size S: qty 0; in_stock false.",
+          "Recorded unit_cost for CC-TEE-WHITE: $8.00.",
+          "Bulldog Print Co specialty: apparel reprint; lead_days: 5.",
+          "Shop date: 2026-08-31; 5-day lead time gives earliest arrival 2026-09-05."
+        ],
+        "constraints": [
+          "1 unit is required and 0 are on hand; shortage is 1.",
+          "The $8.00 is the recorded unit cost, not a vendor-specific order quote."
+        ],
+        "proposed_actions": [],
+        "needs_human_approval": false,
+        "unresolved": []
+      },
+      {
+        "agent": "accounting",
+        "summary": "Invoice 501 for Ticket 101 is an unpaid $840 rush reprint for one CC-TEE-WHITE size S, due 2026-08-28 and 3 days overdue as of 2026-08-31. Checking has $3,400; the SKU unit cost is $8, so one unit is affordable, and the invoice payment is individually affordable; I prepared proposal PAY-0001, pending human approval only.",
+        "facts": [
+          "Ticket 101 is open for qty 1, size S, SKU CC-TEE-WHITE, and links invoice 501.",
+          "Invoice 501 is open, unpaid, for $840 to Bulldog Print Co; due 2026-08-28, days_to_due -3, overdue true (as of 2026-08-31).",
+          "Checking balance is $3,400 on 2026-08-31.",
+          "CC-TEE-WHITE unit_cost is $8 and list_price is $28.",
+          "Lease 1 rent is $2,400, next due 2026-09-02 (2 days after 2026-08-31).",
+          "Invoice plus known rent totals $3,240 against $3,400, leaving $160 if both obligations are paid.",
+          "Proposal PAY-0001 is for invoice 501, amount $840, status pending_human_approval; balance if approved would be $2,560."
+        ],
+        "constraints": [
+          "The records establish the unit cost and cash affordability, but do not establish whether the shirt is already in stock or whether a separate purchase is required."
+        ],
+        "proposed_actions": [
+          {
+            "proposal_id": "PAY-0001",
+            "description": "Payment of overdue invoice 501 for Ticket 101, pending human approval.",
+            "amount": 840.0,
+            "requires_human_approval": true
+          }
+        ],
+        "needs_human_approval": true,
+        "unresolved": [
+          "Human must decide payment priority between overdue invoice 501 and rent due 2026-09-02; both together fit the recorded balance, leaving $160."
+        ]
+      }
+    ],
+    "summary": "Ticket 101 cannot be filled from current stock: one size S is requested and zero are on hand. Invoice 501 is an unpaid $840 rush-reprint invoice and a payment proposal (PAY-0001) is pending human approval; neither the invoice nor its payment proves the reprint is complete or available. Keep the customer updated without promising availability or a date, and confirm the reprint status before fulfillment. Do not treat the recorded $8 unit cost as a confirmed new-order quote.",
+    "dependencies": [
+      "The shop has one cash balance: paying invoice 501 ($840) and the known $2,400 rent due 2026-09-02 would total $3,240 against $3,400, leaving $160. Although both fit the balance, the near-term rent and overdue invoice compete for the same funds; payment priority requires a human decision.",
+      "The pending invoice payment is connected to a reprint, but inventory remains at zero; customer fulfillment depends on confirming the reprint's actual status and arrival."
+    ],
+    "proposed_actions": [
+      {
+        "proposal_id": "PAY-0001",
+        "description": "Payment of overdue invoice 501 for Ticket 101, pending human approval.",
+        "amount": 840.0,
+        "requires_human_approval": true
+      }
+    ],
+    "needs_human_approval": true,
+    "open_questions": [
+      "Should invoice 501 be paid before the $2,400 rent due 2026-09-02, given that paying both leaves $160?",
+      "Has the rush reprint been approved/completed, and what is its confirmed arrival date?",
+      "What customer price and terms should be quoted?"
+    ]
+  },
+  "error": null,
+  "stop_reason": null
+}

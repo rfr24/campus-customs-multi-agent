@@ -1,0 +1,67 @@
+[
+  {
+    "proposal_id": "PAY-0001",
+    "kind": "payment",
+    "target": "invoice:501",
+    "amount": 840.0,
+    "account": "checking",
+    "detail": {
+      "vendor_id": 1,
+      "due_date": "2026-08-28",
+      "description": "Rush reprint CC-TEE-WHITE S",
+      "memo": "Ticket 101 / CC-TEE-WHITE size S; invoice 501 is overdue"
+    },
+    "status": "pending_human_approval",
+    "approval": null,
+    "created_at": "2026-10-11T20:01:55+00:00",
+    "decided_at": null,
+    "decided_by": null
+  },
+  {
+    "proposal_id": "PAY-0002",
+    "kind": "payment",
+    "target": "rent:1",
+    "amount": 2400.0,
+    "account": "checking",
+    "detail": {
+      "landlord": "Elm City Properties",
+      "space_name": "Chapel Street shop",
+      "next_due": "2026-09-02",
+      "memo": "Lease 1 rent due 2026-09-02; pending human approval"
+    },
+    "status": "approved",
+    "approval": {
+      "approved_by": "operator (local)",
+      "approved_at": "2026-10-11T20:43:54+00:00",
+      "nonce": "3933e6baa1958236",
+      "signature": "02580330880a692310ec6d5c78b8f4b8019bf6a914f415add5d2a7bdf8a5b32b"
+    },
+    "created_at": "2026-10-11T20:07:45+00:00",
+    "decided_at": null,
+    "decided_by": null
+  },
+  {
+    "proposal_id": "PUR-0001",
+    "kind": "purchase",
+    "target": "purchase:CC-HOOD-NAVY:M:12:1",
+    "amount": 264.0,
+    "account": "checking",
+    "detail": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 12,
+      "vendor_id": 1,
+      "vendor_name": "Bulldog Print Co",
+      "lead_days": 5,
+      "unit_cost": 22.0,
+      "expected_arrival": "2026-09-05",
+      "qty_on_hand_now": 8,
+      "memo": "Restock shortage for ticket 103 (requested 20; 8 currently on hand). For human approval."
+    },
+    "status": "pending_human_approval",
+    "approval": null,
+    "created_at": "2026-10-11T20:30:22+00:00",
+    "decided_at": null,
+    "decided_by": null
+  }
+]

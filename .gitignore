@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.secrets/
+output/*.lock
+output/*.tmp
+output/*.corrupt-*.json
+node_modules/
+
+# Build artifacts
+dist/
+*.tsbuildinfo
+
+# Local editor config: contains absolute paths from my machine
+.claude/
+
+# The assignment data archive; both databases are committed under data/
+*.zip

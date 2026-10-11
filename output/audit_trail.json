@@ -1,0 +1,4950 @@
+[
+  {
+    "time": "2026-10-11T17:50:12+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:13+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:17+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:19+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:20+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:20+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:20+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 50
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:20+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 50
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:20+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:50:22+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "M"
+    },
+    "result": "CC-TEE-WHITE M=5",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M"
+    },
+    "result": "CC-HOOD-NAVY M=8",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": ""
+    },
+    "result": "CC-TEE-WHITE L=3; M=5; S=0; XL=2",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "XXL"
+    },
+    "result": "CC-TEE-WHITE has no size XXL; stocked sizes: L, M, S, XL",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "cc-tee-white",
+      "size": "s"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "savings"
+    },
+    "result": "No cash account named 'savings'",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE'; DROP TABLE inventory;--",
+      "size": ""
+    },
+    "result": "Unknown sku CC-TEE-WHITE'; DROP TABLE INVENTORY;--",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PAY-0001 for rent:1 amount=2400.00 awaiting human approval",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 2,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0001 2xCC-HOOD-NAVY/M cost=44.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0001",
+      "amount": 44.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0001 approved for 44.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PAY-0001",
+      "amount": 2400.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PAY-0001 approved for 2400.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "2 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "paid 2400.00 for rent 1; lease 1 rolled to next month; checking now 1000.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 was already executed at 2026-10-11T17:54:21+00:00. Refusing to run it twice.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "rent 1 was already paid (payment 1 on 2026-08-31)",
+    "stop_reason": "duplicate_payment"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 100,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "Insufficient funds: checking holds 1000.00, purchase needs 2200.00",
+    "stop_reason": "insufficient_funds"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 12,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0002 12xCC-HOOD-NAVY/M cost=264.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_purchase",
+    "args": {
+      "proposal_id": "PUR-0002"
+    },
+    "result": "Proposal PUR-0002 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0002",
+      "amount": 264.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0002 approved for 264.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_purchase",
+    "args": {
+      "proposal_id": "PUR-0002"
+    },
+    "result": "bought 12xCC-HOOD-NAVY/M for 264.00; qty now 20; checking now 736.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "L",
+      "qty": 1,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0003 1xCC-HOOD-NAVY/L cost=22.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0003",
+      "amount": 22.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0003 approved for 22.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PUR-0003"
+    },
+    "result": "Proposal PUR-0003 is a purchase, not a payment",
+    "stop_reason": "wrong_proposal_kind"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "4 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "XXL",
+      "qty": 5,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "No inventory row for (CC-TEE-WHITE, XXL)",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S",
+      "qty": 0,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "qty must be greater than zero",
+    "stop_reason": "invalid_input"
+  },
+  {
+    "time": "2026-10-11T17:54:21+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S",
+      "qty": 5,
+      "vendor_id": 999,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "No vendor 999",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "M"
+    },
+    "result": "CC-TEE-WHITE M=5",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-HOOD-NAVY"
+    },
+    "result": "CC-HOOD-NAVY cost=22.0 list=58.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 999
+    },
+    "result": "No ticket 999",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "No such proposal: PAY-0001",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T17:54:26+00:00",
+    "tool": "update_ticket_status",
+    "args": {
+      "ticket_id": 101,
+      "status": "in_progress",
+      "note": "P4 connectivity check"
+    },
+    "result": "ticket 101 -> in_progress",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:27+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:28+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:28+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T17:54:29+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:20:59+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:20:59+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:20:59+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:20:59+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-TEE-WHITE"
+    },
+    "result": "CC-TEE-WHITE cost=8.0 list=28.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:20:59+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:20:59+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:00+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:00+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:00+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:00+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 50
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:00+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 50
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:00+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:01+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:01+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:01+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:21:01+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "M"
+    },
+    "result": "CC-TEE-WHITE M=5",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M"
+    },
+    "result": "CC-HOOD-NAVY M=8",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": ""
+    },
+    "result": "CC-TEE-WHITE L=3; M=5; S=0; XL=2",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "XXL"
+    },
+    "result": "CC-TEE-WHITE has no size XXL; stocked sizes: L, M, S, XL",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "cc-tee-white",
+      "size": "s"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "savings"
+    },
+    "result": "No cash account named 'savings'",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE'; DROP TABLE inventory;--",
+      "size": ""
+    },
+    "result": "Unknown sku CC-TEE-WHITE'; DROP TABLE INVENTORY;--",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PAY-0001 for rent:1 amount=2400.00 awaiting human approval",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 2,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0001 2xCC-HOOD-NAVY/M cost=44.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0001",
+      "amount": 44.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0001 approved for 44.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PAY-0001",
+      "amount": 2400.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PAY-0001 approved for 2400.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "2 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "paid 2400.00 for rent 1; lease 1 rolled to next month; checking now 1000.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 was already executed at 2026-10-11T18:40:03+00:00. Refusing to run it twice.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "rent 1 was already paid (payment 1 on 2026-08-31)",
+    "stop_reason": "duplicate_payment"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 100,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "Insufficient funds: checking holds 1000.00, purchase needs 2200.00",
+    "stop_reason": "insufficient_funds"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 12,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0002 12xCC-HOOD-NAVY/M cost=264.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_purchase",
+    "args": {
+      "proposal_id": "PUR-0002"
+    },
+    "result": "Proposal PUR-0002 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0002",
+      "amount": 264.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0002 approved for 264.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_purchase",
+    "args": {
+      "proposal_id": "PUR-0002"
+    },
+    "result": "bought 12xCC-HOOD-NAVY/M for 264.00; qty now 20; checking now 736.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "L",
+      "qty": 1,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0003 1xCC-HOOD-NAVY/L cost=22.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0003",
+      "amount": 22.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0003 approved for 22.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PUR-0003"
+    },
+    "result": "Proposal PUR-0003 is a purchase, not a payment",
+    "stop_reason": "wrong_proposal_kind"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "4 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "XXL",
+      "qty": 5,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "No inventory row for (CC-TEE-WHITE, XXL)",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S",
+      "qty": 0,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "qty must be greater than zero",
+    "stop_reason": "invalid_input"
+  },
+  {
+    "time": "2026-10-11T18:40:03+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S",
+      "qty": 5,
+      "vendor_id": 999,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "No vendor 999",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M"
+    },
+    "result": "CC-HOOD-NAVY M=8",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-HOOD-NAVY"
+    },
+    "result": "CC-HOOD-NAVY cost=22.0 list=58.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-TEE-WHITE"
+    },
+    "result": "CC-TEE-WHITE cost=8.0 list=28.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 50
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T18:45:30+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "0 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:07+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:07+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:15+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:16+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:16+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:16+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:16+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:16+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:16+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:16+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:16+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:50+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:50+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:50+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:50+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:50+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:12:50+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:24+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:25+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:13:37+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:37+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "M"
+    },
+    "result": "CC-TEE-WHITE M=5",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M"
+    },
+    "result": "CC-HOOD-NAVY M=8",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": ""
+    },
+    "result": "CC-TEE-WHITE L=3; M=5; S=0; XL=2",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "XXL"
+    },
+    "result": "CC-TEE-WHITE has no size XXL; stocked sizes: L, M, S, XL",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "cc-tee-white",
+      "size": "s"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "savings"
+    },
+    "result": "No cash account named 'savings'",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE'; DROP TABLE inventory;--",
+      "size": ""
+    },
+    "result": "Unknown sku CC-TEE-WHITE'; DROP TABLE INVENTORY;--",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PAY-0001 for rent:1 amount=2400.00 awaiting human approval",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 2,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0001 2xCC-HOOD-NAVY/M cost=44.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0001",
+      "amount": 44.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0001 approved for 44.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PAY-0001",
+      "amount": 2400.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PAY-0001 approved for 2400.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "2 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "paid 2400.00 for rent 1; lease 1 rolled to next month; checking now 1000.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 was already executed at 2026-10-11T19:14:40+00:00. Refusing to run it twice.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "rent 1 was already paid (payment 1 on 2026-08-31)",
+    "stop_reason": "duplicate_payment"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 100,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "Insufficient funds: checking holds 1000.00, purchase needs 2200.00",
+    "stop_reason": "insufficient_funds"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 12,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0002 12xCC-HOOD-NAVY/M cost=264.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_purchase",
+    "args": {
+      "proposal_id": "PUR-0002"
+    },
+    "result": "Proposal PUR-0002 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0002",
+      "amount": 264.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0002 approved for 264.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_purchase",
+    "args": {
+      "proposal_id": "PUR-0002"
+    },
+    "result": "bought 12xCC-HOOD-NAVY/M for 264.00; qty now 20; checking now 736.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "L",
+      "qty": 1,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0003 1xCC-HOOD-NAVY/L cost=22.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0003",
+      "amount": 22.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0003 approved for 22.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PUR-0003"
+    },
+    "result": "Proposal PUR-0003 is a purchase, not a payment",
+    "stop_reason": "wrong_proposal_kind"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "4 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "XXL",
+      "qty": 5,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "No inventory row for (CC-TEE-WHITE, XXL)",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S",
+      "qty": 0,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "qty must be greater than zero",
+    "stop_reason": "invalid_input"
+  },
+  {
+    "time": "2026-10-11T19:14:40+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S",
+      "qty": 5,
+      "vendor_id": 999,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "No vendor 999",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T19:25:21+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:28:00+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:33:13+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:40:52+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:06+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:06+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:06+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:50:07+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:38+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "open",
+      "limit": 200
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 200
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 200
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:40+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T19:52:59+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:43+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:44+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:44+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:44+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:44+00:00",
+    "tool": "backend.process_ticket",
+    "args": {
+      "ticket_id": 101,
+      "run_id": "run-e96c3efe8944"
+    },
+    "result": "dispatching to Boss agent",
+    "stop_reason": "started"
+  },
+  {
+    "time": "2026-10-11T20:01:46+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:46+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:46+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:46+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:46+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:46+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-TEE-WHITE"
+    },
+    "result": "CC-TEE-WHITE cost=8.0 list=28.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:46+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 50
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:46+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:47+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:47+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:47+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:47+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-TEE-WHITE"
+    },
+    "result": "CC-TEE-WHITE cost=8.0 list=28.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:50+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:01:55+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "invoice",
+      "ref_id": 501,
+      "account": "checking",
+      "memo": "Ticket 101 / CC-TEE-WHITE size S; invoice 501 is overdue"
+    },
+    "result": "proposal PAY-0001 for invoice:501 amount=840.00 awaiting human approval",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:02:08+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:02:08+00:00",
+    "tool": "backend.process_ticket",
+    "args": {
+      "ticket_id": 101,
+      "run_id": "run-e96c3efe8944",
+      "specialists": "inventory,accounting,customer_service"
+    },
+    "result": "stage=awaiting_human_approval; 1 proposed action(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:36+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:36+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:36+00:00",
+    "tool": "backend.process_ticket",
+    "args": {
+      "ticket_id": 102,
+      "run_id": "run-2e2f1a85be87"
+    },
+    "result": "dispatching to Boss agent",
+    "stop_reason": "started"
+  },
+  {
+    "time": "2026-10-11T20:07:38+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:38+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:42+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:42+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:42+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 50
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:42+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 50
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:42+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:42+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:42+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:42+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:45+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": "Lease 1 rent due 2026-09-02; pending human approval"
+    },
+    "result": "proposal PAY-0002 for rent:1 amount=2400.00 awaiting human approval",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:53+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:07:53+00:00",
+    "tool": "backend.process_ticket",
+    "args": {
+      "ticket_id": 102,
+      "run_id": "run-2e2f1a85be87",
+      "specialists": "facilities,accounting"
+    },
+    "result": "stage=awaiting_human_approval; 1 proposed action(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:08:58+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:35+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:35+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:35+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:35+00:00",
+    "tool": "backend.process_ticket",
+    "args": {
+      "ticket_id": 103,
+      "run_id": "run-86743a41ccc8"
+    },
+    "result": "dispatching to Boss agent",
+    "stop_reason": "started"
+  },
+  {
+    "time": "2026-10-11T20:12:41+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:41+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M"
+    },
+    "result": "CC-HOOD-NAVY M=8",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:41+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:41+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-HOOD-NAVY"
+    },
+    "result": "CC-HOOD-NAVY cost=22.0 list=58.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:41+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:42+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:42+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:42+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:42+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:42+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 50
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:44+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:45+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-HOOD-NAVY"
+    },
+    "result": "CC-HOOD-NAVY cost=22.0 list=58.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:45+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 50
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:58+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:12:58+00:00",
+    "tool": "backend.process_ticket",
+    "args": {
+      "ticket_id": 103,
+      "run_id": "run-86743a41ccc8",
+      "specialists": "inventory,customer_service,accounting"
+    },
+    "result": "stage=awaiting_human_approval; 1 proposed action(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:14:34+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 101
+    },
+    "result": "ticket 101 type=customer_order status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 102
+    },
+    "result": "ticket 102 type=rent_notice status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "M"
+    },
+    "result": "CC-TEE-WHITE M=5",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M"
+    },
+    "result": "CC-HOOD-NAVY M=8",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": ""
+    },
+    "result": "CC-TEE-WHITE L=3; M=5; S=0; XL=2",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "XXL"
+    },
+    "result": "CC-TEE-WHITE has no size XXL; stocked sizes: L, M, S, XL",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "cc-tee-white",
+      "size": "s"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "savings"
+    },
+    "result": "No cash account named 'savings'",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE'; DROP TABLE inventory;--",
+      "size": ""
+    },
+    "result": "Unknown sku CC-TEE-WHITE'; DROP TABLE INVENTORY;--",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PAY-0001 for rent:1 amount=2400.00 awaiting human approval",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 2,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0001 2xCC-HOOD-NAVY/M cost=44.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0001",
+      "amount": 44.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0001 approved for 44.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 carries no valid server-issued approval signature. Refusing to execute.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PAY-0001",
+      "amount": 2400.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PAY-0001 approved for 2400.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "2 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "paid 2400.00 for rent 1; lease 1 rolled to next month; checking now 1000.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 was already executed at 2026-10-11T20:23:35+00:00. Refusing to run it twice.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_payment",
+    "args": {
+      "kind": "rent",
+      "ref_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "rent 1 was already paid (payment 1 on 2026-08-31)",
+    "stop_reason": "duplicate_payment"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 100,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "Insufficient funds: checking holds 1000.00, purchase needs 2200.00",
+    "stop_reason": "insufficient_funds"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 12,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0002 12xCC-HOOD-NAVY/M cost=264.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_purchase",
+    "args": {
+      "proposal_id": "PUR-0002"
+    },
+    "result": "Proposal PUR-0002 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0002",
+      "amount": 264.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0002 approved for 264.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_purchase",
+    "args": {
+      "proposal_id": "PUR-0002"
+    },
+    "result": "bought 12xCC-HOOD-NAVY/M for 264.00; qty now 20; checking now 736.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "L",
+      "qty": 1,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "proposal PUR-0003 1xCC-HOOD-NAVY/L cost=22.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PUR-0003",
+      "amount": 22.0,
+      "approved_by": "Rachel (test approver)"
+    },
+    "result": "PUR-0003 approved for 22.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PUR-0003"
+    },
+    "result": "Proposal PUR-0003 is a purchase, not a payment",
+    "stop_reason": "wrong_proposal_kind"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "list_proposals",
+    "args": {
+      "status": ""
+    },
+    "result": "4 proposal(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "XXL",
+      "qty": 5,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "No inventory row for (CC-TEE-WHITE, XXL)",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S",
+      "qty": 0,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "qty must be greater than zero",
+    "stop_reason": "invalid_input"
+  },
+  {
+    "time": "2026-10-11T20:23:35+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S",
+      "qty": 5,
+      "vendor_id": 999,
+      "account": "checking",
+      "memo": ""
+    },
+    "result": "No vendor 999",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "M"
+    },
+    "result": "CC-TEE-WHITE M=5",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-HOOD-NAVY"
+    },
+    "result": "CC-HOOD-NAVY cost=22.0 list=58.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 999
+    },
+    "result": "No ticket 999",
+    "stop_reason": "not_found"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "execute_payment",
+    "args": {
+      "proposal_id": "PAY-0001"
+    },
+    "result": "Proposal PAY-0001 has not been approved by a human. An agent cannot authorize its own proposal.",
+    "stop_reason": "approval_rejected"
+  },
+  {
+    "time": "2026-10-11T20:23:37+00:00",
+    "tool": "update_ticket_status",
+    "args": {
+      "ticket_id": 101,
+      "status": "in_progress",
+      "note": "P4 connectivity check"
+    },
+    "result": "ticket 101 -> in_progress",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:38+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:39+00:00",
+    "tool": "list_tickets",
+    "args": {
+      "status": "open",
+      "limit": 50
+    },
+    "result": "3 ticket(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:39+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:39+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:45+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:45+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:45+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-TEE-WHITE"
+    },
+    "result": "CC-TEE-WHITE cost=8.0 list=28.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:45+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:54+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:54+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:54+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:56+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:56+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 100
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:56+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 100
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:56+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 100
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:56+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:23:58+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-TEE-WHITE"
+    },
+    "result": "CC-TEE-WHITE cost=8.0 list=28.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 100
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 100
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 100
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:21+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:22+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:22+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:22+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:36+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-TEE-WHITE",
+      "size": "S"
+    },
+    "result": "CC-TEE-WHITE S=0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:36+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:36+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-TEE-WHITE"
+    },
+    "result": "CC-TEE-WHITE cost=8.0 list=28.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:36+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 100
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 100
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 100
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:24:37+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:14+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:15+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:15+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:15+00:00",
+    "tool": "backend.process_ticket",
+    "args": {
+      "ticket_id": 103,
+      "run_id": "run-4d06881ddba5"
+    },
+    "result": "dispatching to Boss agent",
+    "stop_reason": "started"
+  },
+  {
+    "time": "2026-10-11T20:30:17+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M"
+    },
+    "result": "CC-HOOD-NAVY M=8",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "list_vendors",
+    "args": {
+      "specialty": "",
+      "limit": 50
+    },
+    "result": "3 vendor(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-HOOD-NAVY"
+    },
+    "result": "CC-HOOD-NAVY cost=22.0 list=58.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "get_cash_balance",
+    "args": {
+      "account": "checking"
+    },
+    "result": "checking balance=3400.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "list_leases",
+    "args": {
+      "limit": 50
+    },
+    "result": "1 lease(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "list_payments",
+    "args": {
+      "limit": 50
+    },
+    "result": "0 payment(s) totalling 0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:19+00:00",
+    "tool": "list_invoices",
+    "args": {
+      "status": "",
+      "limit": 50
+    },
+    "result": "1 invoice(s) as of 2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:21+00:00",
+    "tool": "lookup_inventory",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M"
+    },
+    "result": "CC-HOOD-NAVY M=8",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:21+00:00",
+    "tool": "get_pricing",
+    "args": {
+      "sku": "CC-HOOD-NAVY"
+    },
+    "result": "CC-HOOD-NAVY cost=22.0 list=58.0",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:21+00:00",
+    "tool": "get_invoice",
+    "args": {
+      "invoice_id": 501
+    },
+    "result": "invoice 501 840.0 status=open overdue=True",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:21+00:00",
+    "tool": "get_lease",
+    "args": {
+      "lease_id": 1
+    },
+    "result": "lease 1 rent=2400.0 due=2026-09-02 in 2d",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:22+00:00",
+    "tool": "propose_purchase",
+    "args": {
+      "sku": "CC-HOOD-NAVY",
+      "size": "M",
+      "qty": 12,
+      "vendor_id": 1,
+      "account": "checking",
+      "memo": "Restock shortage for ticket 103 (requested 20; 8 currently on hand). For human approval."
+    },
+    "result": "proposal PUR-0001 12xCC-HOOD-NAVY/M cost=264.00 eta=2026-09-05",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:34+00:00",
+    "tool": "get_ticket",
+    "args": {
+      "ticket_id": 103
+    },
+    "result": "ticket 103 type=price_override status=open",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:30:34+00:00",
+    "tool": "backend.process_ticket",
+    "args": {
+      "ticket_id": 103,
+      "run_id": "run-4d06881ddba5",
+      "specialists": "inventory,customer_service,accounting"
+    },
+    "result": "stage=awaiting_human_approval; 1 proposed action(s)",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:31:53+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:43:54+00:00",
+    "tool": "backend.startup",
+    "args": {},
+    "result": "FastAPI backend started",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:43:54+00:00",
+    "tool": "get_today",
+    "args": {},
+    "result": "today=2026-08-31",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:43:54+00:00",
+    "tool": "approval.grant",
+    "args": {
+      "proposal_id": "PAY-0002",
+      "amount": 2400.0,
+      "approved_by": "operator (local)"
+    },
+    "result": "PAY-0002 approved for 2400.00",
+    "stop_reason": "completed"
+  },
+  {
+    "time": "2026-10-11T20:44:07+00:00",
+    "tool": "backend.shutdown",
+    "args": {},
+    "result": "FastAPI backend stopped",
+    "stop_reason": "completed"
+  }
+]
